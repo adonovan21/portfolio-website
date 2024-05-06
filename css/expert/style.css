@@ -1,0 +1,114 @@
+/*
+Colors Used:
+    Pale Dogwood - #d3bdbo or rgb(211,189,176)
+    Khaki - #c1ae9f or rgb(193,174,159)
+    Reseda Green - #89937c or rgb(137,147,124)
+    Lapis Lazuli - #28587b or rgb(40,88,123)
+    Oxford Blue - #0a2342 or rgb(10,35,66)
+
+Typography Used:
+    Headings - font-family: "Playfair Display", serif;
+    Body - font-family: "Lato", san-serif;
+*/
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+    background-color: #d3bdb0;
+    font-family: 'lato-regular', sans-serif;
+    font-size: 16px;
+}
+h1, h2, h3, h4{
+    font-family: 'playfair-display';
+    line-height: 1.4;
+}
+h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+img {
+    width: 100%;
+}
+a {
+    color: #28587b;
+    text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+    color: #0a2342;
+}
+a:active { /* selected link */
+    color: #0a2342;
+}
+a:hover {
+    color: #284f7b;
+    text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:hover,
+a:focus {
+  color: #284f7b;
+  text-decoration: underline;
+}
+.button {
+    display: inline-block;
+    background-color: #28587b;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #000000;
+    transition: 0.2s;
+}
+.button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.button:active {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.button.contact {
+    background-color: transparent;
+    color: #28587b;
+    text-transform: uppercase;
+    border: 2px solid #28587b;
+}
+.button.contact:hover {
+    background-color: #28587b;
+    color: #ffffff;
+  }
