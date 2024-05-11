@@ -1,6 +1,6 @@
 /*
 Colors Used:
-    Pale Dogwood - #d3bdbo or rgb(211,189,176)
+    Pale Dogwood - #d3bdb0 or rgb(211,189,176)
     Khaki - #c1ae9f or rgb(193,174,159)
     Reseda Green - #89937c or rgb(137,147,124)
     Lapis Lazuli - #28587b or rgb(40,88,123)
@@ -38,7 +38,7 @@ Typography Used:
   font-style: normal;
 }
 body {
-    background-color: #d3bdb0;
+    background-color: #c1ae9f;
     font-family: 'lato-regular', sans-serif;
     font-size: 16px;
 }
@@ -55,7 +55,7 @@ h2 {
     font-weight: 700;
 }
 h3 {
-    font-size: 1.75em;
+    font-size: 2em;
     font-weight: 400;
   }
 h4 {
@@ -79,8 +79,7 @@ a:hover {
     color: #284f7b;
     text-decoration: underline; /* Underlining when hovering over a link */
 }
-a:hover,
-a:focus {
+a:hover, a:focus {
   color: #284f7b;
   text-decoration: underline;
 }
@@ -112,3 +111,97 @@ a:focus {
     background-color: #28587b;
     color: #ffffff;
   }
+header {
+    background-color: #d3bdb0;
+    padding: 10px 5px 15px 5px;
+    margin: 10px 15px 10px 15px;
+    border-bottom: 3px solid #89937c;
+    text-align: center;
+    position: fixed;
+    display: inline-block;
+}
+
+/* Layout Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0;
+}
+
+#Intro {
+    text-align: center;
+}
+
+#About_Me h1 {
+    text-align: center;
+}
+
+#Expert h1 {
+    text-align: center;
+}
+
+#Intro, #My_Work, #Get_In_Touch, #About_Me, #Expert {
+    background-color: #d3bdb0;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+nav > ul > li > a:visited {
+    color: #0a2342
+}
+
+nav > ul > li > a:hover {
+    color: #0a2342
+}
+
+nav > ul > li > a:active {
+    color: #284f7b;
+    text-decoration: underline;
+}
+
+nav {
+    display: inline-block;
+}
+
+.css-box-shadow{
+	/*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #d3bdb0; 
+	border: solid #BDBDBD 1px; 
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+}
+
+main {
+    padding-top: 133px;
+}
