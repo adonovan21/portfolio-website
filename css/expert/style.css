@@ -87,7 +87,7 @@ a:hover, a:focus {
 }
 .button {
     display: inline-block;
-    background-color: #28587b;
+    background-color: #89937c;
     color: #ffffff;
     font-weight: 400;
     padding: 10px;
@@ -104,30 +104,19 @@ a:hover, a:focus {
     text-decoration: none;
 }
 .button.contact {
-    background-color: transparent;
-    color: #28587b;
+    background-color: #28587b;
+    color: #ffffff;
     text-transform: uppercase;
-    border: 2px solid #28587b;
+    border-bottom: 2px solid #000000;
 }
 .button.contact:hover {
     background-color: #28587b;
     color: #ffffff;
-  }
-header {
-    background-color: #d3bdb0;
-    padding: 10px 0 4px;
-    margin: 10px 15px 10px 15px;
-    border-bottom: 3px solid #89937c;
-    position: fixed;
-    width: auto;
-    display: inline-block;
+    opacity: 0.8;
+    text-decoration: none;
 }
 
 /* Layout Styling */
-
-* {
-    box-sizing: border-box;
-}
 
 .container {
     padding: 0 15px;
@@ -135,7 +124,7 @@ header {
 
 .row {
     margin: 25px 0;
-    content: "";
+    content: none;
     clear: both;
     display: table;
 }
@@ -144,15 +133,11 @@ header {
     text-align: center;
 }
 
-#About_Me h1 {
+#About_Me #Expert h1 {
     text-align: center;
 }
 
 #My_Work h2 {
-    text-align: center;
-}
-
-#Expert h1 {
     text-align: center;
 }
 
@@ -163,27 +148,18 @@ header {
     width: 100%;
 }
 
-nav {
-    width: 100%;
+#Get_In_Touch {
+    text-align: center;
 }
 
-.logo {
-    max-width: 250px;
-    padding: 10px;
-}
-
-
-nav > ul {
+#Get_In_Touch > ul {
+    display: inline-block;
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
-nav > ul > li > a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #4a4a4a;
+#Get_In_Touch > a {
+    display: inline-block;
 }
 
 nav > ul > li > a:visited {
@@ -197,6 +173,64 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
     color: #284f7b;
     text-decoration: underline;
+}
+
+.css-box-shadow{
+	/*start ------------*/
+	width: 100%; 
+	height: auto;
+    position: fixed;
+	background: #d3bdb0; 
+	border: solid #BDBDBD 1px; 
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #d3bdb0;
+    padding: 10px 0;
+    border-bottom: 3px solid #89937c;
+    position: fixed;
+    width: auto;
+    display: inline-block;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+nav {
+    text-align: right;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav > ul > li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li > a {
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
 }
 
 .navtoggle li:not(:last-child) {
@@ -215,10 +249,6 @@ nav > ul > li > a:active {
     padding-right: 0;
 }
 
-.navtoggle.responsive li  {
-    display: block;
-}
-
 .navtoggle.responsive nav {
     padding: 24px 0 0;
 }
@@ -226,32 +256,16 @@ nav > ul > li > a:active {
 .navtoggle.responsive li  {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid rgba(255,127,80,0.5);
+    border-top: 1px solid rgba(137,147,124,1);
 }
-  
+
 .navtoggle.responsive li:last-child  {
     padding: 0 0 10px;
 }
 
-nav {
-    display: inline-block;
-    width: 100%;
-}
-
-.css-box-shadow{
-	/*start ------------*/
-	width: 100%; 
-	height: 110px;
-    position: fixed;
-	background: #d3bdb0; 
-	border: solid #BDBDBD 1px; 
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); 
-	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); 
-	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-}
 
 main {
-    padding-top: 133px;
+    padding-top: 56px;
 }
 
 /* ==============================
@@ -261,14 +275,21 @@ Medium devices (640px and larger)
     header {
         text-align: unset;
         padding: 20px 0 13px;
-        width: unset;
     }
 
     nav {
         width: auto;
         float: right;
         margin-top: 4px;
+    }
+
+    nav > ul {
         margin: 1em 0;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+        position: relative;
     }
 
     .navtoggle li:not(:last-child) {
@@ -277,10 +298,6 @@ Medium devices (640px and larger)
 
     .navtoggle li:last-child {
         display: none;
-    }
-
-    nav > ul > li {
-        min-width: 641px;
     }
 
     .col-md-6 {
