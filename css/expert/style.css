@@ -33,7 +33,6 @@ Typography Used:
 }
 .playfair-display {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
@@ -110,6 +109,13 @@ a:hover, a:focus {
     border-bottom: 2px solid #000000;
 }
 .button.contact:hover {
+    background-color: #28587b;
+    color: #ffffff;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.button.contact:active {
     background-color: #28587b;
     color: #ffffff;
     opacity: 0.8;
