@@ -64,8 +64,22 @@ h4 {
 img {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: auto;  
 }
+
+#About_Me {
+    img {
+        width: auto;
+    }
+}
+
+#Expert {
+    img {
+        width: auto;
+        text-align: center;
+    }
+}
+
 a {
     color: #28587b;
     text-decoration: none; /* No underlining */
